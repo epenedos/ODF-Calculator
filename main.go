@@ -109,8 +109,8 @@ func main() {
 	mux.Handle("/assets/", http.StripPrefix("/assets/", fs))
 	mux.HandleFunc("/graph", httpserver)
 	mux.HandleFunc("/", httpserver_home)
-	fmt.Println("Server started at port 8081")
-	log.Fatal(http.ListenAndServe(":8081", mux))
+	fmt.Println("Server started at port 8080")
+	log.Fatal(http.ListenAndServe(":8080", mux))
 
 }
 

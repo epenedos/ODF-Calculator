@@ -3,7 +3,7 @@ module go
 go 1.18
 
 require (
-	github.com/fatih/color v1.10.0 // indirect
+	github.com/fatih/color v1.13.0 // indirect
 	github.com/cosmtrek/air v1.30.0 // indirect
 	github.com/fsnotify/fsnotify v1.5.4 // indirect
 	github.com/go-echarts/go-echarts/v2 v2.2.4 // indirect

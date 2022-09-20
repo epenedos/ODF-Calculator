@@ -24,7 +24,7 @@ commands:
   - id: build
     exec:
       component: tools
-      workingDir: ${PROJECTS_ROOT}/ODF
+      workingDir: ${PROJECTS_ROOT}/
       commandLine: go build
       group:
         kind: build
@@ -32,6 +32,6 @@ commands:
     exec:
       component: tools
       workingDir: ${PROJECTS_ROOT}/golang-health-check
-      commandLine: ./golang-health-check
+      commandLine: ./main
       group:
         kind: run

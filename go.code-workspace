@@ -1,0 +1,12 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"name": "go",
+			"path": "../../../go"
+		}
+	],
+	"settings": {}
+}

@@ -24,14 +24,14 @@ commands:
   - id: build
     exec:
       component: tools
-      workingDir: ${PROJECTS_ROOT}/
+      workingDir: ${PROJECTS_ROOT}/odfcalculator
       commandLine: go build
       group:
         kind: build
   - id: run
     exec:
       component: tools
-      workingDir: ${PROJECTS_ROOT}/golang-health-check
+      workingDir: ${PROJECTS_ROOT}/odfcalculator
       commandLine: ./main
       group:
         kind: run

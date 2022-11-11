@@ -5,5 +5,5 @@ WORKDIR /opt/app-root/src/ODF-Calculator
 RUN pwd
 RUN go build
 RUN ls -lisa
-CMD  /opt/app-root/src/ODF-Calculator/main
+CMD  /opt/app-root/src/ODF-Calculator/odf
 EXPOSE 8080

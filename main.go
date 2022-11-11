@@ -128,7 +128,7 @@ func generateBarItems(raw bool) []opts.BarData {
 }
 
 func httpserver_home(w http.ResponseWriter, r *http.Request) {
-	var tpl = template.Must(template.ParseFiles("./index.html"))
+	var tpl = template.Must(template.ParseFiles("index.html"))
 	tpl.Execute(w, nil)
 
 }

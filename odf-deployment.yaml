@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: odf
+spec:
+  replicas: 1
+  revisionHistoryLimit: 3
+  selector:
+    matchLabels:
+      app: odf
+  template:
+    metadata:
+      labels:
+        app: odf
+    spec:
+      containers:
+      - image: gcr.io/heptio-images/ks-guestbook-demo:0.2
+        name: odf
+        ports:
+        - containerPort: 8080

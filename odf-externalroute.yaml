@@ -1,0 +1,13 @@
+kind: Route
+apiVersion: route.openshift.io/v1
+metadata:
+  name: external-odf
+spec:
+  host: odf-odf.apps.ocp.sdxsolutions.com
+  to:
+    kind: Service
+    name: odf
+    weight: 100
+  port:
+    targetPort: 8080-tcp
+  wildcardPolicy: None

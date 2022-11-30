@@ -3,7 +3,7 @@ apiVersion: route.openshift.io/v1
 metadata:
   name: external-odf
 spec:
-  host: odf-odf.apps.ocp.sdxsolutions.com
+  host: odf-openshift-gitops.apps.ocp.sdxsolutions.com
   to:
     kind: Service
     name: odf

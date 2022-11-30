@@ -14,7 +14,7 @@ spec:
         app: odf
     spec:
       containers:
-      - image: image-registry.openshift-image-registry.svc:5000/odf/odf@sha256:644422a68ce40a933e79b4eb617a606ead53e9409490f16576052be2a66872c1
+      - image: image-registry.openshift-image-registry.svc:5000/openshift-gitops/odf@sha256:644422a68ce40a933e79b4eb617a606ead53e9409490f16576052be2a66872c1
         name: odf
         ports:
         - containerPort: 8080

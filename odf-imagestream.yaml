@@ -1,0 +1,11 @@
+kind: ImageStream
+apiVersion: image.openshift.io/v1
+metadata:
+  name: odf
+  labels:
+    app: odf
+    app.kubernetes.io/component: odf
+    app.kubernetes.io/instance: odf
+spec:
+  lookupPolicy:
+    local: false

@@ -8,7 +8,6 @@ components:
       memoryLimit: 2Gi
       mountSources: true
       env:
-        env:
         - name: GOPATH
           # replicate the GOPATH from the plugin
           value: /projects/.che/gopath:/projects

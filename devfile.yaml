@@ -24,14 +24,14 @@ commands:
   - id: build
     exec:
       component: odf
-      workingDir: ${PROJECTS_ROOT}/ODF-Calculator
+      workingDir: ${PROJECTS_ROOT}/odf-calculator
       commandLine: go build
       group:
         kind: build
   - id: run
     exec:
       component: odf
-      workingDir: ${PROJECTS_ROOT}/ODF-Calculator
+      workingDir: ${PROJECTS_ROOT}/odf-calculator
       commandLine: ./odf
       group:
         kind: run

@@ -2,32 +2,36 @@ schemaVersion: 2.1.0
 metadata:
   name: odf
 components:
-  - name: tools
+  - name: odf
     container:
       image: registry.redhat.io/devspaces/udi-rhel8:3.1
       memoryLimit: 2Gi
       mountSources: true
       env:
+        env:
+        - name: GOPATH
+          # replicate the GOPATH from the plugin
+          value: /projects/.che/gopath:/projects
         - name: GOCACHE
           # replicate the GOCACHE from the plugin, even though the cache is not shared
           # between the two
           value: /tmp/.cache
       endpoints:
         - exposure: public
-          name: 'odf1'
+          name: 'odf'
           protocol: http
           targetPort: 8080
 commands:
   - id: build
     exec:
-      component: tools
+      component: odf
       workingDir: ${PROJECTS_ROOT}/ODF-Calculator
       commandLine: go build
       group:
         kind: build
   - id: run
     exec:
-      component: tools
+      component: odf
       workingDir: ${PROJECTS_ROOT}/ODF-Calculator
       commandLine: ./odf
       group:

@@ -1,4 +1,4 @@
-module odf/V2
+module odf/v2
 
 go 1.17
 
